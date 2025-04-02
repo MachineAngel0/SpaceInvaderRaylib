@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj: dyndep
+
+build CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj: dyndep
+

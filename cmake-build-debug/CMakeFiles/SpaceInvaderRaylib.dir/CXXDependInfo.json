@@ -1,0 +1,22 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib",
+	"dir-top-bld" : "C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug",
+	"dir-top-src" : "C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps\\raylib-src\\src",
+		"_deps\\raylib-src\\src\\external\\glfw\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir"
+}
