@@ -29,7 +29,7 @@ int main(void)
         // update loop
 
         //Player Movement keys
-        // TODO: Check for out of bounds
+        // TODO: Check for out of bounds, and when player is hit
         if (IsKeyDown(KEY_D))
         {
             player.PlayerPos.x += player.PlayerSpeed * GetFrameTime();
