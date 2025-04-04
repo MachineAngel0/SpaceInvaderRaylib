@@ -89,7 +89,47 @@ build CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj: CXX_COMPILER__SpaceInvader
   TARGET_PDB = "C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.pdb"
   dyndep = CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd
 
-build CMakeFiles\SpaceInvaderRaylib.dir\CXX.dd | C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\CMakeFiles\SpaceInvaderRaylib.dir\CXXModules.json CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj.modmap CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj.modmap: CXX_DYNDEP__SpaceInvaderRaylib_Debug CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj.ddi CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj.ddi | C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\CMakeFiles\SpaceInvaderRaylib.dir\CXXDependInfo.json
+build CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.ddi: CXX_SCAN__SpaceInvaderRaylib_Debug C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\Projectile.cpp || cmake_object_order_depends_target_SpaceInvaderRaylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src" -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src\external\glfw\include"
+  OBJ_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.ddi.i
+
+build CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj: CXX_COMPILER__SpaceInvaderRaylib_scanned_Debug C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\Projectile.cpp | CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.modmap || cmake_object_order_depends_target_SpaceInvaderRaylib CMakeFiles\SpaceInvaderRaylib.dir\CXX.dd
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src" -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src\external\glfw\include"
+  OBJECT_DIR = CMakeFiles\SpaceInvaderRaylib.dir
+  OBJECT_FILE_DIR = CMakeFiles\SpaceInvaderRaylib.dir
+  TARGET_COMPILE_PDB = CMakeFiles\SpaceInvaderRaylib.dir\
+  TARGET_PDB = "C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.pdb"
+  dyndep = CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd
+
+build CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.ddi: CXX_SCAN__SpaceInvaderRaylib_Debug C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\Entity.cpp || cmake_object_order_depends_target_SpaceInvaderRaylib
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src" -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src\external\glfw\include"
+  OBJ_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.ddi.i
+
+build CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj: CXX_COMPILER__SpaceInvaderRaylib_scanned_Debug C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\Entity.cpp | CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.modmap || cmake_object_order_depends_target_SpaceInvaderRaylib CMakeFiles\SpaceInvaderRaylib.dir\CXX.dd
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src" -I"C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\_deps\raylib-src\src\external\glfw\include"
+  OBJECT_DIR = CMakeFiles\SpaceInvaderRaylib.dir
+  OBJECT_FILE_DIR = CMakeFiles\SpaceInvaderRaylib.dir
+  TARGET_COMPILE_PDB = CMakeFiles\SpaceInvaderRaylib.dir\
+  TARGET_PDB = "C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.pdb"
+  dyndep = CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd
+
+build CMakeFiles\SpaceInvaderRaylib.dir\CXX.dd | C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\CMakeFiles\SpaceInvaderRaylib.dir\CXXModules.json CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj.modmap CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj.modmap CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.modmap CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.modmap: CXX_DYNDEP__SpaceInvaderRaylib_Debug CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj.ddi CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj.ddi CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj.ddi CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj.ddi | C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\cmake-build-debug\CMakeFiles\SpaceInvaderRaylib.dir\CXXDependInfo.json
 
 
 # =============================================================================
@@ -99,7 +139,7 @@ build CMakeFiles\SpaceInvaderRaylib.dir\CXX.dd | C$:\Users\Adams$ Humbert\CLionP
 #############################################
 # Link the executable C:\Users\Adams Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.exe
 
-build C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.exe: CXX_EXECUTABLE_LINKER__SpaceInvaderRaylib_Debug CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj | _deps\raylib-build\raylib\raylib.lib || _deps\raylib-build\raylib\external\glfw\src\glfw _deps\raylib-build\raylib\raylib.lib
+build C$:\Users\Adams$ Humbert\CLionProjects\SpaceInvaderRaylib\SpaceInvaderRaylib.exe: CXX_EXECUTABLE_LINKER__SpaceInvaderRaylib_Debug CMakeFiles\SpaceInvaderRaylib.dir\main.cpp.obj CMakeFiles\SpaceInvaderRaylib.dir\Game.cpp.obj CMakeFiles\SpaceInvaderRaylib.dir\Projectile.cpp.obj CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj | _deps\raylib-build\raylib\raylib.lib || _deps\raylib-build\raylib\external\glfw\src\glfw _deps\raylib-build\raylib\raylib.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = _deps\raylib-build\raylib\raylib.lib  opengl32.lib  glu32.lib  winmm.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
