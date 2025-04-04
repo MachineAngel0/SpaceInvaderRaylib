@@ -16,7 +16,7 @@ typedef struct Player
 {
     Vector2 Position{};
     Texture2D PlayerTexture{};
-    const char *TextureFilePath = "Assets/SpaceInvaders_SpriteSheet.png";
+    const char* TextureFilePath = "Assets/SpaceInvaders_SpriteSheet.png";
     //UV Location
     Vector2 SpriteAtlusUVLocation{0, 50};
     //width height
@@ -37,9 +37,9 @@ static const Player PlayerStart = {
 
 Player InitPlayer();
 
-void MoveLeft(Player &player);
+void MoveLeft(Player& player);
 
-void MoveRight(Player &player);
+void MoveRight(Player& player);
 
 
 typedef struct SpaceInvaderEnemy
@@ -47,7 +47,7 @@ typedef struct SpaceInvaderEnemy
     Vector2 Position = {0, 0};
     //this is just here for now, but i could move it to a more global space
     Texture2D EnemyTexture{};
-    const char *TextureFilePath = "Assets/SpaceInvaders_SpriteSheet.png";
+    const char* TextureFilePath = "Assets/SpaceInvaders_SpriteSheet.png";
     //UV Location
     Vector2 SpriteAtlusUVLocation{0, 0};
     Vector2 SpriteAtlusUVLocation2{0, 0}; // for when the enemy moves
@@ -91,13 +91,13 @@ void InitEnemies();
 
 void UpdateEnemy();
 
-void DespawnEnemy(SpaceInvaderEnemy &Enemy);
+void DespawnEnemy(SpaceInvaderEnemy& Enemy);
 
 void MoveEnemiesDown(float movedownamount = 5.f);
 
-Texture2D InitSpriteTexture(const char *TextureFilePath);
+Texture2D InitSpriteTexture(const char* TextureFilePath);
 
-void DrawSpriteAtlus(const Texture2D &SpriteTexture, const Vector2 SpriteAtlusUVLocation,
+void DrawSpriteAtlus(const Texture2D& SpriteTexture, const Vector2 SpriteAtlusUVLocation,
                      const Vector2 SpriteAtlusSize, const Vector2 SpritePosition,
                      const Vector2 SpriteScale);
 

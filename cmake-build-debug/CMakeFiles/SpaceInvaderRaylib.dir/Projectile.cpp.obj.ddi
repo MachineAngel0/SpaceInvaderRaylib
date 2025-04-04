@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\SpaceInvaderRaylib.dir\\Projectile.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Adams Humbert\\CLionProjects\\SpaceInvaderRaylib\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\SpaceInvaderRaylib.dir\\Projectile.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

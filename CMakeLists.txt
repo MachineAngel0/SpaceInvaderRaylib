@@ -18,6 +18,8 @@ add_executable(${PROJECT_NAME} main.cpp
         Projectile.h
         Entity.cpp
         Entity.h
+        ECS.cpp
+        ECS.h
 )
 target_link_libraries(${PROJECT_NAME} raylib)
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR})

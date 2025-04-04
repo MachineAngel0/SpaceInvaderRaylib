@@ -1,5 +1,7 @@
 ﻿#include <array>
 #include <iostream>
+
+#include "ECS.h"
 #include "raylib.h"
 #include "Game.h"
 #include "GameWindow.h"
@@ -19,11 +21,23 @@ int main(void)
     // GameState
     GameState game_state;
 
+    ComponentRegistry component_registry;
 
-    Player player = InitPlayer();
+    Entity entity_player = CreateEntity();
+    component_registry.sprite_atlus[entity_player] = SpriteAtlusComponent{
+        .sprite_UV_location = {0, 50},
+        .sprite_size = {17, 10},
+        .sprite_scale = {2, 2},
+    };
+    const int ScreenHeightOffset = 20;
+    component_registry.transforms[entity_player] = Transform2DComponent{
+        .position = Vector2(ScreenWidth / 2 - component_registry.sprite_atlus[entity_player].sprite_size.y,
+                              ScreenHeight - component_registry.sprite_atlus[entity_player].sprite_size.y - ScreenHeightOffset),
+        .Velocity = {0, 0},
+    };
 
-
-    InitEnemies();
+    //Init
+    SpriteSystem::Init(component_registry);
 
     //game loop
     while (!WindowShouldClose())
@@ -34,69 +48,26 @@ int main(void)
         // TODO: Check for out of bounds, and when player is hit
         if (IsKeyDown(KEY_D))
         {
-            MoveRight(player);
         }
         if (IsKeyDown(KEY_A))
         {
-            MoveLeft(player);
         }
         //spawn projectile
         if (IsKeyPressed(KEY_SPACE))
         {
-            ShootProjectile(player);
-        }
-
-        // projectile to enemies collision
-        for (auto &enemy: EnemyArray)
-        {
-            for (auto &projectile: ProjectileArray)
-            {
-                if (!projectile.isAlive) continue;
-                if (CheckCollisionRecs(
-                        Rectangle{projectile.Position.x, projectile.Position.y, projectile.Size.x, projectile.Size.y},
-                        Rectangle{
-                            enemy.Position.x, enemy.Position.y, enemy.SpriteAtlusSize.x * enemy.SpriteScale.x,
-                            enemy.SpriteAtlusSize.y * enemy.SpriteScale.x
-                        })
-                    && enemy.isAlive)
-
-                {
-                    printf("hit\n");
-
-                    DespawnEnemy(enemy);
-
-                    projectile.isAlive = false;
-                    game_state.score++;
-                }
-
-                // for debugging
-                //DrawRectangle(projectile.Position.x, projectile.Position.y, projectile.Size.x, projectile.Size.y, RED);
-                //DrawRectangle(enemy.Position.x, enemy.Position.y, enemy.SpriteAtlusSize.x*enemy.SpriteScale.x, enemy.SpriteAtlusSize.y*enemy.SpriteScale.x, RED);
-            }
-        }
-        for (auto &enemy: EnemyArray)
-        {
-            // if any
         }
 
         /*update loop*/
 
-        //update projectile
-        UpdateProjectile();
-
+        TransformSystem::Update(component_registry);
+        SpriteSystem::Update(component_registry);
+        PlayerMovementSystem::Update(component_registry);
 
         // render loop
         BeginDrawing();
         ClearBackground(BLACK);
 
-
-        //DrawSprite(Enemy.EnemyTexture, Enemy.SpriteAtlusLocation, Enemy.Position, Enemy.SpriteScale);
-        DrawSpriteAtlus(player.PlayerTexture, player.SpriteAtlusUVLocation, player.SpriteAtlusSize, player.Position,
-                        player.SpriteScale);
-
-        UpdateEnemy();
-        UpdateDrawProjectile();
-
+        SpriteSystem::Draw(component_registry);
 
         // this gets drawn on top
         // DrawText("Space Invaders!", 0.f, 0.f, 20, GREEN);
@@ -104,6 +75,7 @@ int main(void)
         DrawText(TextFormat("Score: %i", game_state.score), 20, 20, 20, WHITE);
         EndDrawing();
     }
+
 
     CloseWindow();
 
