@@ -4,7 +4,8 @@
 
 #ifndef PLAYER_H
 #define PLAYER_H
-#include "ECS.h"
+#include "ECS_Component.h"
+#include "ECS_Entity.h"
 #include "GameWindow.h"
 
 

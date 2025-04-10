@@ -4,6 +4,5 @@
 
 #include "Projectile.h"
 
-#include "ECS.h"
 
 

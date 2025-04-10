@@ -1,12 +1,11 @@
 ﻿#include <array>
 #include <iostream>
 
-#include "ECS.h"
+#include "ECS_Component.h"
+#include "ECS_System.h"
 #include "raylib.h"
 #include "Game.h"
 #include "GameWindow.h"
-#include "Projectile.h"
-#include "Entity.h"
 
 
 #define Window_Title "Space Invaders"
@@ -106,7 +105,11 @@ int main(void)
             .Velocity = {0, 0},
         };
 
-        component_registry.Aliens[alien];
+        component_registry.aliens[alien];
+        component_registry.collision_rectangle_2ds[alien] =
+        {
+            .size{17, 10}
+        };
 
 
         row++;
@@ -142,6 +145,7 @@ int main(void)
 
         /*update loop*/
 
+
         TransformSystem::Update(component_registry);
         SpriteSystem::Update(component_registry);
         PlayerMovementSystem::Update(component_registry);
@@ -149,6 +153,7 @@ int main(void)
         //TODO:
         //LifeTimeSystem::Update(component_registry);
         RectangleRenderSystem::Update(component_registry);
+        CollisionRectangleCollisionSystem::Update(component_registry);
 
         // render loop
         BeginDrawing();
