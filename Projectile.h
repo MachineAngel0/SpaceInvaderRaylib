@@ -4,33 +4,25 @@
 
 #ifndef PROJECTILE_H
 #define PROJECTILE_H
-
-#include <array>
-
-#include "Entity.h"
+#include "ECS.h"
 #include "raylib.h"
 
 
-typedef struct Projectile
+inline void CreatePlayerProjectile(ComponentRegistry& component_registry, Vector2 position)
 {
-    Vector2 Position{};
-    Vector2 Velocity = Vector2{0.f, 200.f};
-    Vector2 Size = Vector2{5.f, 10.f};;
-    bool isAlive = true;
-} Projectile;
+    Entity projectile = CreateEntity();
 
-constexpr int PROJECTILE_MAX{15};
-static int ProjectileArrayCount = 0;
-inline std::array<Projectile, PROJECTILE_MAX> ProjectileArray;
+    component_registry.transforms[projectile] = {
+        .position = {position},
+        .Velocity = {0, -300.f},
 
-void UpdateDrawProjectile();
-void DrawProjectile(const Projectile &projectile);
+    };
+    component_registry.Rectangle2DRenders[projectile] = {
+        .size{10, 20},
+        .color{GREEN},
+    };
 
-void ShootProjectile(const Player &player);
-
-
-
-void UpdateProjectile();
+}
 
 
 #endif //PROJECTILE_H

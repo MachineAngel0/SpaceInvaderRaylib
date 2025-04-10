@@ -1,28 +1,28 @@
 # ninja log v6
-273	759	7654430296469666	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
+124	499	7659535231645046	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
 1187	1696	7651398928554762	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	bfca30d84b42c3b3
-5	96	7654443584307047	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-117	732	7654443585424293	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
+5	99	7659535230457055	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+121	857	7659535231619972	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
 276	759	7654430296499685	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj	f94075d9ab424baa
-96	117	7654443585216767	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
+99	121	7659535231390280	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
 17	162	7651398916854316	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj	b768d1d927fea0f5
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-120	426	7654443585455411	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+126	492	7659535231669587	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
 46	1152	7651398917146112	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	d96bbe5f9e2d11b0
 27	156	7651398916950193	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj	e93ae3013f2f15fa
 1053	1246	7651397649818294	SpaceInvaderRaylib.exe	d560017eabbf1a73
 162	1306	7651398918314097	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	e272c362f507c36e
 20	194	7651398916884346	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj	40f8378508b27e8e
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
 14	623	7651398916824293	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj	818bf4054994805a
-732	833	7654443591579321	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
+857	1016	7659535238977724	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	f0d80a334de75512
 11	631	7651398916794249	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj	5177b6c98b8cc4ca
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
 38	925	7651398917065449	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj	da0b78a959e2847a
 30	937	7651398916985227	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj	92b2ea05c53eb9dd
 49	959	7651398917176149	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	3057425c1038c4f4
-8	37	7654376834368458	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.ddi	77cb940fde824abe
+9	39	7659464903197015	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.ddi	77cb940fde824abe
 1889	1950	7651398935570824	_deps/raylib-build/raylib/raylib.lib	c360cdd00760abe4
 41	1113	7651398917096050	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	ea80368321b3ce02
 34	1159	7651398917025431	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj	4ccff4af6fc339e5
@@ -32,89 +32,91 @@
 8	1715	7651398916759061	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj	1d489fe500383d1f
 194	1325	7651398918634940	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	ee1382a068109674
 631	1624	7651398922996818	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	ec0bf34b8df7fbaf
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
 1159	1689	7651398928268907	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	5fc0c714f779cce0
 1154	1689	7651398928228872	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	fbfa188cf354d289
 624	1694	7651398922921614	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	d700420d56ca31b0
-4	198	7654399795863766	build.ninja	7322cb5183bbacf9
+4	198	7657875299212968	build.ninja	7322cb5183bbacf9
 925	1705	7651398925939062	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	e60ee9dc89c60ad6
 1307	1889	7651398929747446	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	eb33b84452fb34e5
 1113	1719	7651398927818083	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	fac0846c3c867eeb
 937	1726	7651398926169527	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	64c1db51ce37af34
-8	77	7654443584337512	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
+11	81	7659535230517450	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
 1302	1783	7651398929697385	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	fc94ecf5975f05b1
 959	1810	7651398926274902	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	9d5343760f7ea5
-116	149	7654376835449038	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj	1682198f638bc76f
+129	163	7659464904385286	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj	1682198f638bc76f
 12	241	7654430293862385	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.ddi	b35638ccb4940a2a
-9	243	7654430293830042	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
-96	117	7654443585216767	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-9	78	7654443719716133	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
-5	99	7654443719680797	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-99	119	7654443720612975	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-99	119	7654443720612975	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-122	426	7654443720842135	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
-119	737	7654443720822103	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-737	836	7654443726996303	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
-8	78	7654443815457846	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
-5	97	7654443815425599	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-97	117	7654443816349357	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-97	117	7654443816349357	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-120	425	7654443816573805	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
-117	726	7654443816553781	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-726	827	7654443822636299	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
-8	79	7654443939239395	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
-4	97	7654443939214544	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-98	118	7654443940144403	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-98	118	7654443940144403	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-122	468	7654443940387174	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
-119	778	7654443940357144	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-778	878	7654443946947556	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
-7	77	7654444142425126	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
-4	95	7654444142389660	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-95	115	7654444143295132	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-95	115	7654444143295132	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-118	426	7654444143523220	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
-115	730	7654444143498106	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-730	834	7654444149647886	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
-8	78	7654444314436650	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
-4	97	7654444314406410	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-97	116	7654444315325344	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-97	116	7654444315325344	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-119	426	7654444315548404	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
-117	727	7654444315523529	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-727	831	7654444321626149	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
-5	95	7654445219202086	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	9f80894a998af82c
-95	115	7654445220100459	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	9f80894a998af82c
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	9f80894a998af82c
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	9f80894a998af82c
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	9f80894a998af82c
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	9f80894a998af82c
-95	115	7654445220100459	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	9f80894a998af82c
-116	730	7654445220324432	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
-730	835	7654445226464963	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	d2cb1486c9307a91
+13	84	7659535230542529	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.ddi	3b06dbc6c04ea36e
+8	79	7659535230487436	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+99	121	7659535231390280	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+129	518	7659535231689616	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj	365c96046f330edb
+8	81	7659535854888785	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
+5	98	7659535854858769	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
+98	118	7659535855791152	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
+98	118	7659535855791152	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+122	533	7659535856029225	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
+119	887	7659535855999189	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
+887	2447	7659535863682007	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	f0d80a334de75512
+8	78	7659535973749037	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
+5	99	7659535973723635	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
+99	120	7659535974662364	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
+99	120	7659535974662364	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+123	504	7659535974899135	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
+120	1025	7659535974879121	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
+1025	2359	7659535983921512	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	f0d80a334de75512
+13	85	7659538686016729	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
+10	85	7659538685996718	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
+15	86	7659538686047079	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.ddi	3b06dbc6c04ea36e
+6	103	7659538685956368	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
+103	124	7659538686918017	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
+103	124	7659538686918017	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+128	591	7659538687165470	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
+130	594	7659538687195488	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
+133	614	7659538687225530	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj	365c96046f330edb
+5	96	7659538795335410	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
+96	117	7659538796242555	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
+96	117	7659538796242555	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+117	837	7659538796459974	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
+837	973	7659538803658413	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	f0d80a334de75512
+9	100	7659539590507389	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.ddi	177851d32fb77df4
+12	101	7659539590537939	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.ddi	f97bc5037954af49
+15	112	7659539590560436	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.ddi	3b06dbc6c04ea36e
+5	120	7659539590467098	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.ddi	b935968c7953984d
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/CXX.dd	e210e2f1f9b32511
+120	142	7659539591615079	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/cmake-build-debug/CMakeFiles/SpaceInvaderRaylib.dir/CXXModules.json	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj.modmap	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/Game.cpp.obj.modmap	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj.modmap	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/Entity.cpp.obj.modmap	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj.modmap	e210e2f1f9b32511
+120	142	7659539591615079	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj.modmap	e210e2f1f9b32511
+148	626	7659539591893932	CMakeFiles/SpaceInvaderRaylib.dir/ECS.cpp.obj	70f7842467e65a11
+146	630	7659539591874289	CMakeFiles/SpaceInvaderRaylib.dir/Projectile.cpp.obj	6a343ced12350ff5
+151	646	7659539591924250	CMakeFiles/SpaceInvaderRaylib.dir/Player.cpp.obj	365c96046f330edb
+142	973	7659539591833418	CMakeFiles/SpaceInvaderRaylib.dir/main.cpp.obj	19daf8265fb42b7d
+973	1101	7659539600141304	C:/Users/Adams Humbert/CLionProjects/SpaceInvaderRaylib/SpaceInvaderRaylib.exe	f0d80a334de75512

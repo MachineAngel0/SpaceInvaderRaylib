@@ -9,3 +9,5 @@ build CMakeFiles\SpaceInvaderRaylib.dir\Entity.cpp.obj: dyndep
 
 build CMakeFiles\SpaceInvaderRaylib.dir\ECS.cpp.obj: dyndep
 
+build CMakeFiles\SpaceInvaderRaylib.dir\Player.cpp.obj: dyndep
+

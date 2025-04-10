@@ -8,11 +8,13 @@
 #include <cstdint>
 
 
+enum EnemyDirection{ Right, Left};
 
 typedef struct GameState
 {
 
     uint16_t score = 0;
+    EnemyDirection enemy_direction{Right};
 
 } GameState;
 

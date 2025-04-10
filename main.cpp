@@ -18,11 +18,17 @@ int main(void)
 
     SetTargetFPS(60);
 
+
+
     // GameState
     GameState game_state;
 
+    // component registry
     ComponentRegistry component_registry;
 
+
+
+    // player
     Entity entity_player = CreateEntity();
     component_registry.sprite_atlus[entity_player] = SpriteAtlusComponent{
         .sprite_UV_location = {0, 50},
@@ -35,6 +41,83 @@ int main(void)
                               ScreenHeight - component_registry.sprite_atlus[entity_player].sprite_size.y - ScreenHeightOffset),
         .Velocity = {0, 0},
     };
+    component_registry.inputs[entity_player] = InputComponent{
+
+    };
+
+
+    // Enemy
+    // set their size apart
+    uint8_t row_size = 11;
+    uint8_t col_size = 4;
+
+
+    uint8_t row = 0;
+    uint8_t col = 0;
+
+    const uint8_t SquidEnemyAmount = 11;
+    const uint8_t CrabEnemyAmount = 22;
+    const uint8_t OctopusEnemyAmount = 22;
+    const uint8_t EnemyTotal = SquidEnemyAmount + CrabEnemyAmount + OctopusEnemyAmount;
+
+    for (auto i = 0; i < EnemyTotal; i++)
+    {
+        Entity alien = CreateEntity();
+
+        // set the position
+        const int RowSpawnOffset = 50;
+        const int ColSpawnOffset = 50;
+        const int HorizontalScreenOffset = 50;
+        const int VerticalScreenOffset = 50;
+        float horizontal_location = row * RowSpawnOffset + HorizontalScreenOffset;
+        float vertical_location = col * ColSpawnOffset + VerticalScreenOffset;
+
+        // replace these with an enum
+        if (col == 0) // squid
+        {
+            component_registry.sprite_atlus[alien] = SpriteAtlusComponent{
+                .sprite_UV_location = {0, 0},
+                 .sprite_size = {17, 10},
+                .sprite_scale = {2, 2},
+            };
+        }
+        if (col == 1 || col == 2) // crab
+        {
+            component_registry.sprite_atlus[alien] = SpriteAtlusComponent{
+                .sprite_UV_location = {20, 10},
+                .sprite_size = {17, 10},
+                .sprite_scale = {2, 2},
+            };
+        }
+        if (col == 3 || col == 4) // octo
+        {
+            component_registry.sprite_atlus[alien] = SpriteAtlusComponent{
+                .sprite_UV_location = {37, 10},
+                .sprite_size = {17, 10},
+                .sprite_scale = {2, 2},
+            };
+        }
+
+        const int screen_height_offset = 50;
+        const int screen_width_offset = 50;
+        component_registry.transforms[alien] = Transform2DComponent{
+            .position = Vector2(horizontal_location,
+                                  vertical_location),
+            .Velocity = {0, 0},
+        };
+
+        component_registry.Aliens[alien];
+
+
+        row++;
+        if (row >= row_size)
+        {
+            row = 0;
+            col++;
+        }
+    }
+
+
 
     //Init
     SpriteSystem::Init(component_registry);
@@ -62,6 +145,10 @@ int main(void)
         TransformSystem::Update(component_registry);
         SpriteSystem::Update(component_registry);
         PlayerMovementSystem::Update(component_registry);
+        AlienMovementSystem::Update(component_registry, game_state, SquidEnemyAmount);
+        //TODO:
+        //LifeTimeSystem::Update(component_registry);
+        RectangleRenderSystem::Update(component_registry);
 
         // render loop
         BeginDrawing();
