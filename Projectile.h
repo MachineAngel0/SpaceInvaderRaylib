@@ -18,11 +18,11 @@ inline void CreatePlayerProjectile(ComponentRegistry& component_registry, Vector
 
     };
     component_registry.rectangle_2d_renders[projectile] = {
-        .size{10, 20},
+        .size{7, 20},
         .color{GREEN},
     };
     component_registry.collision_rectangle_2ds[projectile] = {
-        .size {10,20}
+        .size {7,20}
     };
     component_registry.projectile_component[projectile] = {};
 

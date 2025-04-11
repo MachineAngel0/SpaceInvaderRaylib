@@ -4,13 +4,12 @@
 
 #ifndef ECS_H
 #define ECS_H
+#include <array>
 #include <cstdint>
 #include <iostream>
 #include <unordered_map>
 
 #include "ECS_Entity.h"
-#include "Game.h"
-#include "GameWindow.h"
 #include "cmake-build-debug/_deps/raylib-src/src/raylib.h"
 
 
@@ -36,6 +35,9 @@ typedef struct ComponentRegistry
     std::unordered_map<Entity, Rectangle2DComponent> rectangle_2d_renders;
     std::unordered_map<Entity, CollisionRectangle2DComponent> collision_rectangle_2ds;
     std::unordered_map<Entity, ProjectileComponent>  projectile_component;
+
+    /*testing*/
+    //std::array<ProjectileComponent, max_entity_amount>  projectile_component_array;
 } ComponentRegistry;
 
 

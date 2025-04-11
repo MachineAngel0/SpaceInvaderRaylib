@@ -5,6 +5,8 @@
 #ifndef ECS_SYSTEM_H
 #define ECS_SYSTEM_H
 #include "ECS_Component.h"
+#include "Game.h"
+#include "GameWindow.h"
 #include "Projectile.h"
 
 
@@ -74,6 +76,8 @@ typedef struct SpriteSystem
                 AtlusUV.height * sprite.sprite_scale.y
             };
             DrawTexturePro(sprite.sprite_texture, AtlusUV, Dest, Vector2{0, 0}, 0, GREEN);
+            // here for debugging
+            //DrawRectangle(transform.position.x, transform.position.y, sprite.sprite_size.x * sprite.sprite_scale.x, sprite.sprite_size.y * sprite.sprite_scale.y, RED);
         }
     }
 } SystemsList;
@@ -88,10 +92,10 @@ typedef struct PlayerMovementSystem
             if (!component_registry.transforms.contains(i) || !component_registry.inputs.contains(i)) continue;
 
             Transform2DComponent& transform_2d_component = component_registry.transforms[i];
-
+            const float PlayerSpeed = 200;
             if (IsKeyDown(KEY_D))
             {
-                transform_2d_component.Velocity.x = 50;
+                transform_2d_component.Velocity.x = 200;
             }
             if (IsKeyReleased(KEY_D))
             {
@@ -99,7 +103,7 @@ typedef struct PlayerMovementSystem
             }
             if (IsKeyDown(KEY_A))
             {
-                transform_2d_component.Velocity.x = -50;
+                transform_2d_component.Velocity.x = -200;
             }
             if (IsKeyReleased(KEY_A))
             {
@@ -121,8 +125,6 @@ typedef struct AlienMovementSystem
 {
     static void Update(ComponentRegistry& component_registry, GameState& game_state, int SquidEnemyAmount)
     {
-        // this is kinda bad but getting the first alien manually and then getting the last alien,
-        // maybe these can be specific components
 
         float move_down_amount = 300.f;
         bool move_down_flag = false;
@@ -226,21 +228,24 @@ typedef struct CollisionRectangleCollisionSystem
 
             for (int j = 0; j < max_entity_count; j++)
             {
-                if (!component_registry.collision_rectangle_2ds.contains(j) || !component_registry.transforms.contains(i) || !component_registry.aliens.contains(j))
+                if (!component_registry.collision_rectangle_2ds.contains(j) || !component_registry.transforms.contains(i) || !component_registry.sprite_atlus.contains(j) || !component_registry.aliens.contains(j))
                     continue;
                 CollisionRectangle2DComponent projectile_collision = component_registry.collision_rectangle_2ds[i];
+                Rectangle2DComponent projectile_rectangle_2d_component = component_registry.rectangle_2d_renders[i];
                 Transform2DComponent projectile_transform = component_registry.transforms[i];
                 Rectangle projectile_rectangle{projectile_transform.position.x, projectile_transform.position.y,
-                              projectile_collision.size.x, projectile_collision.size.y};
+                              projectile_collision.size.x,projectile_collision.size.y };
 
                 CollisionRectangle2DComponent enemy_collision = component_registry.collision_rectangle_2ds[j];
                 Transform2DComponent enemy_transform = component_registry.transforms[j];
+                SpriteAtlusComponent enemy_sprite = component_registry.sprite_atlus[j];
                 Rectangle enemy_rectangle{enemy_transform.position.x, enemy_transform.position.y,
-                              enemy_collision.size.x, enemy_collision.size.y};
+                              enemy_collision.size.x * enemy_sprite.sprite_scale.x, enemy_collision.size.y* enemy_sprite.sprite_scale.y};
 
                 if (CheckCollisionRecs(projectile_rectangle, enemy_rectangle))
                 {
                     std::cout << "Collision detected\n";
+                    component_registry.sprite_atlus[j].sprite_scale = Vector2{0,0};
                 }
 
             }
